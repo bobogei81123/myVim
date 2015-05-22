@@ -18,7 +18,7 @@ Plug 'jlanzarotta/bufexplorer'
 
 call plug#end()
 
-colorscheme torte
+colorscheme pika
 syn on
 
 highlight Normal ctermbg=None
