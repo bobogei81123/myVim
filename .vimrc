@@ -1,3 +1,23 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-surround'
+Plug 'honza/vim-snippets'
+Plug 'garbas/vim-snipmate'
+Plug 'tpope/vim-haml'
+Plug 'tpope/vim-fugitive'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'bling/vim-airline'
+Plug 'marcweber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'Yggdroot/indentLine'
+Plug 'othree/html5.vim'
+Plug 'jlanzarotta/bufexplorer'
+
+call plug#end()
+
 colorscheme torte
 syn on
 
@@ -6,7 +26,7 @@ highlight Normal ctermbg=None
 set et
 set ts=4 sw=4 sts=4
 set mouse=a
-set nu
+set nu rnu
 set ai
 set ar
 set bs=indent,eol,start ww+=<,>,[,]
@@ -39,9 +59,8 @@ au BufEnter * silent! lcd %:p:h
 
 au filetype html,yaml setl ts=2 sw=2 sts=2
 au filetype css,sass,scss setl ts=2 sw=2 sts=2
-au filetype python setl ts=2 sw=2 sts=2
+"au filetype python setl ts=2 sw=2 sts=2
 
-au BufNewFile,BufRead *.coffee	setf coffeescript
 au filetype javascript,coffeescript,coffee setl ts=2 sw=2 sts=2
 "au BufNewFile,BufRead *.coffee setl ts=2 sw=2 sts=2
 
@@ -55,7 +74,7 @@ au FileType java set makeprg=javac\ %
 let mapleader=' '
 
 "pathogen
-exec pathogen#infect()
+"exec pathogen#infect()
 
 "let g:tex_fold_enabled = 1
 let g:tex_nine_config = {
