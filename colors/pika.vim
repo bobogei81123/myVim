@@ -110,10 +110,10 @@ if has("gui_running")
 elseif &t_Co == 256
 
   " -> Text; Miscellaneous
-  hi Normal         ctermbg=none ctermfg=252 cterm=none
+  hi Normal         ctermbg=none ctermfg=254 cterm=none
   hi SpecialKey     ctermbg=none ctermfg=177 cterm=none
   hi VertSplit      ctermbg=none ctermfg=227 cterm=none
-  hi SignColumn     ctermbg=none ctermfg=141 cterm=none
+  hi SignColumn     ctermbg=234  ctermfg=141 cterm=none
   hi NonText        ctermbg=none ctermfg=204 cterm=none
   hi Directory      ctermbg=none ctermfg=227 cterm=none 
   hi Title          ctermbg=none ctermfg=172 cterm=bold
@@ -129,10 +129,10 @@ elseif &t_Co == 256
   hi Folded         ctermbg=none ctermfg=25  cterm=none
 
   " -> Line info  
-  hi LineNr         ctermbg=0    ctermfg=241 cterm=none
+  hi LineNr         ctermbg=235  ctermfg=241 cterm=none
   hi StatusLine     ctermbg=0    ctermfg=241 cterm=none
   hi StatusLineNC   ctermbg=237  ctermfg=241 cterm=none
-  hi ColorColumn    ctermbg=238              cterm=none
+  hi ColorColumn    ctermbg=242              cterm=none
 
   " -> Messages
   hi ErrorMsg       ctermbg=124  ctermfg=252 cterm=none
@@ -143,7 +143,7 @@ elseif &t_Co == 256
 
   " -> Search 
   hi Search         ctermbg=241  ctermfg=227 cterm=none 
-  hi IncSearch      ctermbg=241  ctermfg=227 cterm=none
+  hi IncSearch      ctermbg=253  ctermfg=22 cterm=underline,reverse
 
   " -> Diff
   hi DiffAdd        ctermbg=22   ctermfg=208 cterm=none
@@ -152,7 +152,7 @@ elseif &t_Co == 256
   hi DiffText       ctermbg=24   ctermfg=208 cterm=underline
 
   " -> Menu
-  hi Pmenu          ctermbg=0    ctermfg=52  cterm=none
+  hi Pmenu          ctermbg=0    ctermfg=252  cterm=none
   hi PmenuSel       ctermbg=208  ctermfg=52  cterm=none
   hi PmenuSbar      ctermbg=52               cterm=none
   hi PmenuThumb     ctermbg=52               cterm=none
